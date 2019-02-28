@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log"
+    android:paddingLeft="@dimen/nav_header_vertical_spacing"
+    android:paddingRight="@dimen/nav_header_vertical_spacing"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etun"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="226dp"
+        android:background="@drawable/etblock"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <EditText
+        android:id="@+id/etpw"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:background="@drawable/etblock"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="114dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/shapes"
+        android:text="Login"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHighlight="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvfgt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:background="#80ffffff"
+        android:paddingLeft="@dimen/nav_header_vertical_spacing"
+        android:paddingRight="@dimen/nav_header_vertical_spacing"
+        android:text="Forgot Your Password?"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="173dp"
+        android:layout_height="163dp"
+        android:layout_alignStart="@+id/tvcrtnewacc"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="11dp"
+        android:background="#80ffffff"
+        app:srcCompat="@mipmap/newlogo" />
+
+    <TextView
+        android:id="@+id/tvcrtnewacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="#80ffffff"
+        android:paddingLeft="@dimen/nav_header_vertical_spacing"
+        android:paddingRight="@dimen/nav_header_vertical_spacing"
+        android:text="Create A New Account?"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btlogin"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-18dp"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="@dimen/nav_header_vertical_spacing"
+        android:paddingRight="@dimen/nav_header_vertical_spacing"
+        android:text="PARK HERE"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="@dimen/place_autocomplete_progress_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="259dp"
+        android:layout_marginEnd="14dp"
+        android:text="ASSURING YOUR SECURE AND PLEASURE"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="@dimen/ph_activity_horizontal_margin"
+        android:textStyle="bold" />
+
+</RelativeLayout>

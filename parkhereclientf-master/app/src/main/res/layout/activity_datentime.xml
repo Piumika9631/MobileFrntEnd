@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg"
+    android:paddingLeft="@dimen/fab_margin"
+    tools:context=".Datentime">
+
+    <TextView
+        android:id="@+id/in_date"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="76dp"
+        android:background="#80ffffff"
+        android:paddingLeft="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/in_date"
+        android:layout_toEndOf="@+id/in_date"
+        android:layout_toRightOf="@+id/in_date"
+        android:text="SELECT DATE" />
+
+    <TextView
+        android:id="@+id/in_time"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_date"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="23dp"
+        android:background="#80ffffff" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_date"
+        android:layout_alignStart="@+id/btn_date"
+        android:layout_alignLeft="@+id/btn_date"
+        android:text="CHECK IN TIME" />
+
+
+    <TextView
+        android:id="@+id/out_time"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_time"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#80ffffff"
+        android:paddingLeft="@dimen/fab_margin" />
+
+    <Button
+        android:id="@+id/btnout_time"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_time"
+        android:layout_alignStart="@+id/btn_date"
+        android:layout_alignLeft="@+id/btn_date"
+        android:text="CHECK OUT TIME" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_date"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="confirm"
+        android:text="Next" />
+</RelativeLayout>

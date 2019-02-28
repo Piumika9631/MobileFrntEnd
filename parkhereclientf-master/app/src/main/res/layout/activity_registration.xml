@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg"
+    tools:context=".Registration">
+
+
+    <TextView
+        android:id="@+id/tvregtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:fontFamily="monospace"
+        android:freezesText="false"
+        android:text="REGISTRATION"
+        android:background="#80ffffff"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etpw"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="269dp"
+        android:background="#80ffffff"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/nav_header_vertical_spacing" />
+
+    <EditText
+        android:id="@+id/etpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:background="#80ffffff"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/nav_header_vertical_spacing" />
+
+    <EditText
+        android:id="@+id/etcompw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etemail"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="386dp"
+        android:background="#80ffffff"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/nav_header_vertical_spacing" />
+
+    <Button
+        android:id="@+id/btreg"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shapes"
+        android:text="Register" />
+
+    <EditText
+        android:id="@+id/etfname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etemail"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:background="#80ffffff"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/nav_header_vertical_spacing" />
+
+    <EditText
+        android:id="@+id/etlname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="203dp"
+        android:background="#80ffffff"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/nav_header_vertical_spacing" />
+</RelativeLayout>

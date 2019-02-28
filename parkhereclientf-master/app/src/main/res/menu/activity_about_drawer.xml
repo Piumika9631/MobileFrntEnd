@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_drive_eta"
+            android:title="Add Vehicle" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_refresh"
+            android:title="Bookings" />
+
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_stars"
+            android:title="My Points" />
+        <item
+            android:id="@+id/nav_send1"
+            android:icon="@drawable/ic_live_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_send2"
+            android:icon="@drawable/ic_people"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/nav_send4"
+            android:icon="@drawable/ic_action_goleft"
+            android:title="Log Out" />
+
+    </group>
+
+
+
+</menu>
